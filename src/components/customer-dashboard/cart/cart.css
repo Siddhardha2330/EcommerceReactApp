@@ -1,0 +1,32 @@
+.cart-remove-btn {
+  margin-top: 1rem;
+  background: #ff4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cart-remove-btn:hover {
+  background: #c82333;
+}
+
+.cart-order-btn {
+  margin: 2rem auto 0 auto;
+  display: block;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cart-order-btn:hover {
+  background: #444;
+}

@@ -1,0 +1,205 @@
+.update-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(40,60,120,0.13);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.update-form h2 {
+  margin-bottom: 1.2rem;
+  color: #232f3e;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1.1px;
+  line-height: 1.1;
+}
+
+.error-message {
+  color: #ff4444;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #ffeeee;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.01rem;
+  font-weight: 600;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #232f3e;
+  font-size: 1.01rem;
+  letter-spacing: 0.1px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem 1rem;
+  border: 1.3px solid #e3e6ee;
+  border-radius: 8px;
+  font-size: 1.01rem;
+  background: #f7f8fd;
+  color: #232f3e;
+  transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #646cff;
+  background: #f0f2ff;
+  box-shadow: 0 2px 12px rgba(100,108,255,0.10);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.cancel-btn, .update-btn, .delete-btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.01rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background 0.18s, color 0.18s, box-shadow 0.13s;
+}
+
+.cancel-btn {
+  background: #f5f5f5;
+  color: #333;
+}
+.cancel-btn:hover, .cancel-btn:focus {
+  background: #e0e0e0;
+}
+
+.update-btn {
+  background: linear-gradient(90deg, #646cff 60%, #232f3e 100%);
+  color: #fff;
+}
+.update-btn:hover, .update-btn:focus {
+  background: linear-gradient(90deg, #232f3e 60%, #646cff 100%);
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: #fff;
+}
+.delete-btn:hover, .delete-btn:focus {
+  background: #cc0000;
+}
+
+.category-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 0.2rem;
+  width: 100%;
+  background: #fff;
+  border: 1.3px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(100,108,255,0.10);
+  z-index: 20;
+  max-height: 160px;
+  overflow-y: auto;
+  padding: 0.2rem 0;
+}
+
+.category-dropdown-item {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 1.01rem;
+  color: #232f3e;
+  transition: background 0.18s, color 0.18s;
+  border-radius: 6px;
+}
+.category-dropdown-item:hover, .category-dropdown-item.selected {
+  background: #f0f2ff;
+  color: #646cff;
+}
+
+.form-group.category-group {
+  position: relative;
+}
+
+/* Image Upload Styles */
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.image-upload-label {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: #f0f2ff;
+  color: #646cff;
+  border: 2px dashed #646cff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.image-upload-label:hover {
+  background: #e6e8ff;
+  border-color: #232f3e;
+  color: #232f3e;
+}
+
+.image-preview {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e3e6ee;
+  background: #f7f8fd;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .update-form {
+    max-width: 98vw;
+    padding: 1rem 0.3rem;
+  }
+}

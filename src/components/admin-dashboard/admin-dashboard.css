@@ -1,0 +1,93 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background-color: #eaeded;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #131921;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left .shop-now {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #febd69;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  transition: color 0.3s;
+}
+
+.nav-left .shop-now:hover {
+  color: #fff;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+.nav-link:hover {
+  background-color: #232f3e;
+  color: #febd69;
+}
+
+.logout-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #ffd814;
+  color: #111;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #f7ca00;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 2rem;
+  color: #232f3e;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}

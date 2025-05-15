@@ -1,0 +1,232 @@
+.form-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6f7fb 60%, #e9eaf3 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+
+.create-product {
+
+  width: 375px;
+  overflow:auto;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(40,60,120,0.13);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  height: auto;
+}
+
+.create-product h2 {
+  margin-bottom: 1.2rem;
+  color: #232f3e;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1.1px;
+  line-height: 1.1;
+}
+
+.error-message {
+  color: #ff4444;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #ffeeee;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.01rem;
+  font-weight: 600;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #232f3e;
+  font-size: 1.01rem;
+  letter-spacing: 0.1px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem 1rem;
+  border: 1.3px solid #e3e6ee;
+  border-radius: 8px;
+  font-size: 1.01rem;
+  background: #f7f8fd;
+  color: #232f3e;
+  transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #646cff;
+  background: #f0f2ff;
+  box-shadow: 0 2px 12px rgba(100,108,255,0.10);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-group input[type="file"] {
+  padding: 0.5rem;
+  border: 1.3px dashed #646cff;
+  border-radius: 8px;
+  background: #f7f8fd;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-group input[type="file"]:hover {
+  background: #f0f2ff;
+  border-color: #232f3e;
+}
+
+.upload-status {
+  margin-top: 0.5rem;
+  color: #646cff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.image-preview {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.01rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #646cff 60%, #232f3e 100%);
+  color: #fff;
+  transition: background 0.18s, color 0.18s, box-shadow 0.13s;
+}
+.submit-btn:hover, .submit-btn:focus {
+  background: linear-gradient(90deg, #232f3e 60%, #646cff 100%);
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.category-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 0.2rem;
+  width: 100%;
+  background: #fff;
+  border: 1.3px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(100,108,255,0.10);
+  z-index: 20;
+  max-height: 160px;
+  overflow-y: auto;
+  padding: 0.2rem 0;
+}
+
+.category-dropdown-item {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 1.01rem;
+  color: #232f3e;
+  transition: background 0.18s, color 0.18s;
+  border-radius: 6px;
+}
+.category-dropdown-item:hover, .category-dropdown-item.selected {
+  background: #f0f2ff;
+  color: #646cff;
+}
+.category-dropdown-empty {
+  padding: 0.5rem 1rem;
+  color: #aaa;
+  font-size: 0.98rem;
+}
+.form-group.category-group {
+  position: relative;
+}
+/* Mobile enhancements - additional styles only */
+@media (max-width: 600px) {
+  .create-product {
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem 1rem;
+  }
+
+  .product-form {
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .image-preview {
+    max-width: 100%;
+  }
+
+  .category-dropdown {
+    font-size: 1rem;
+    max-height: 140px;
+  }
+
+  .category-dropdown-item {
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .error-message {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
+
